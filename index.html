@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
+        <a class="navbar-brand text-white" href="#">Guess The Number</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container mx-auto text-center col-4">
+        <h1 class="display-1 text-warning text-center mt-3 mb-3">1.2.3.</h1>
+        <div class="row text-center">
+            <div class="input-group mt-3 mb-3 mx-auto">
+                <input id="user-guess" type="text" class="form-control mb-3" placeholder="What's your guess?" onfocus="this.value=''" />
+            </div>
+        </div>
+        <div id="alert-space">
+            <!-- Display alert here -->
+        </div>
+        <div class="mb-3">
+            <button id="check" class="btn-secondary btn-lg text-white mt-2">
+                Check
+            </button>
+            <button id="restart" class="btn-light btn-lg text-dark">Restart</button>
+        </div>
+
+        <div id="results">
+            <!-- Display result here -->
+        </div>
+    </div>
+
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- APP JS -->
+    <script src="./game.js" type="text/javascript"></script>
+</body>
+
+</html>
