@@ -14,6 +14,11 @@ const begin = () => {
   });
 
   const analyze = (guess) => {
+    if (guess === "") {
+          $("#alert-space").html(
+            `<div class="alert alert-danger mt-2" role="alert">Please enter a guess!</div>`
+          );
+    }
 
     if (guess > winningNum) {
         tries += 1;
