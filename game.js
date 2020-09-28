@@ -1,6 +1,5 @@
 const begin = () => {
   const winningNum = Math.round(Math.random() * 100);
-  console.log(winningNum);
   const check = document.getElementById("check");
   const restart = document.getElementById("restart");
   let gotIt = false;
